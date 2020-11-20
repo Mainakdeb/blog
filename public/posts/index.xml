@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on @mainakdeb</title>
+    <link>https://mainakdeb.github.io/posts/</link>
+    <description>Recent content in Posts on @mainakdeb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mainakdeb.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Did I Create This Blog ?</title>
+      <link>https://mainakdeb.github.io/posts/how-did-i-create-this-blog-/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/how-did-i-create-this-blog-/</guid>
+      <description>Intro : I should have updated my blog long ago, but here I am, about 7 months late, with a brand new blog. So, how did I create this and host it online on Github Pages, given that I have near zero experience in web-dev?
+My brother suggested me to use Hugo for my new blog, I googled &amp;lsquo;Hugo templates&amp;rsquo; and ended up at https://themes.gohugo.io/. I spent around an hour to shortlist and pick a suitable theme.</description>
+    </item>
+    
+  </channel>
+</rss>

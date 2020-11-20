@@ -1,0 +1,54 @@
+baseURL = "https://mainakdeb.github.io/"
+title = "@mainakdeb"
+themesDir = "./themes/"
+theme = "m10c"
+paginate = 5
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+#  [[menu.main]]
+#    identifier = "tags"
+#    name = "Tags"
+#    url = "/tags/"
+
+[params]
+  author = "Mainak Deb"
+  description = "Hello, welcome to Mainak's blog"
+  menu_item_separator = " - "
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/Mainakdeb"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/MainakDeb19"
+
+  [[params.social]]
+    name = "mail"
+    url = "mailto:mainakmayukh2000@gmail.com"
+
+  # Brown theme
+  #[params.style]
+  #  darkestColor = "#463625"
+  #  darkColor = "#2a3738"
+  #  primaryColor = "#eeee6a"
+  #  lightColor = "#96a879"
+  #  lightestColor = "#ffffff"
+
+  # Green theme
+  #[params.style]
+  #  darkestColor = "#315659"
+  #  darkColor = "#253031"
+  #  primaryColor = "#dad865"
+  #  lightColor = "#96a879"
+  #  lightestColor = "#fff"
+
+  # Red and black theme
+  #[params.style]
+  #  darkestColor = "#d35050"
+  #  darkColor = "#212121"
+  #  primaryColor = "#ffffff"
+  #  lightColor = "#a2a2a2"
+  #  lightestColor = "#d3d3d3"
