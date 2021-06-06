@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GSoC on @mainakdeb</title>
+    <link>https://mainakdeb.github.io/tags/gsoc/</link>
+    <description>Recent content in GSoC on @mainakdeb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mainakdeb.github.io/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GSoC - Community Bonding</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-community-bonding/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-community-bonding/</guid>
+      <description>This blog post summary of what I&amp;rsquo;ve been doing this week and what I plan to do in the coming week.
+Work Done This Week :   Gave a presentation on the weekly DevoWorm meeting, discussed the goals and deadlines that need to be met in the coming months - link to the slides
+  Read some articles/papers suggested by my mentor that deal with working with communities and collaboration, liked one in particular that talks about &amp;ldquo;bursty&amp;rdquo; communication and how it helps remote teams thrive - link</description>
+    </item>
+    
+  </channel>
+</rss>

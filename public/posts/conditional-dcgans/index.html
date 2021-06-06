@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>The Next Step - Conditional DCGANs // @mainakdeb</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Mainak Deb" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://mainakdeb.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Next Step - Conditional DCGANs"/>
+<meta name="twitter:description" content="GANs can generate real-looking samples, but can they be trained to generate conditioned samples? The answer is yes. This blog post documents my learning experience with Conditional GANs and attempts to explain how I was able to generate images of class-specific handwritten digits. The digits you see above are not real, they are generated using a PyTorch based Conditional DCGAN, I&rsquo;ve prepared a colab notebook, feel free to check it out by clicking the badge below."/>
+
+    <meta property="og:title" content="The Next Step - Conditional DCGANs" />
+<meta property="og:description" content="GANs can generate real-looking samples, but can they be trained to generate conditioned samples? The answer is yes. This blog post documents my learning experience with Conditional GANs and attempts to explain how I was able to generate images of class-specific handwritten digits. The digits you see above are not real, they are generated using a PyTorch based Conditional DCGAN, I&rsquo;ve prepared a colab notebook, feel free to check it out by clicking the badge below." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mainakdeb.github.io/posts/conditional-dcgans/" />
+<meta property="article:published_time" content="2020-12-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-07T00:00:00+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mainakdeb.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Mainak Deb" /></a>
+      <h1>@mainakdeb</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+      </nav>
+      <p>Hi, welcome to Mainak&#39;s blog</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/Mainakdeb" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/MainakDeb19" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+          <a target="_blank" href="mailto:mainakmayukh2000@gmail.com" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-mail">
+  <title>mail</title>
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">The Next Step - Conditional DCGANs</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 7, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+              <a class="tag" href="https://mainakdeb.github.io/tags/conditional-gan/">Conditional-GAN</a>
+              <a class="tag" href="https://mainakdeb.github.io/tags/gans/">GANs</a>
+              <a class="tag" href="https://mainakdeb.github.io/tags/mnist/">MNIST</a>
+              <a class="tag" href="https://mainakdeb.github.io/tags/dcgan/">DCGAN</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><img src="../images/mnist_cgan_demo.gif" alt=""></p>
+<p>GANs can generate real-looking samples, but can they be trained to generate conditioned samples? The answer is yes. This blog post documents my learning experience with Conditional GANs and attempts to explain how I was able to generate images of class-specific handwritten digits. The digits you see above are not real, they are generated using a PyTorch based Conditional DCGAN, I&rsquo;ve prepared a colab notebook, feel free to check it out by clicking the badge below.</p>
+<p><a href="https://colab.research.google.com/github/Mainakdeb/digit-GAN/blob/main/digit-dcgan.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<h2 id="background-">Background :</h2>
+<p>While I was experimenting with GANs (<a href="">read more</a>), one question that constanty bugged me was;</p>
+<p>Is possible to use GANs to generate class specific samples?</p>
+<p>My model was successfully able to generate real looking hand-written digits, but it was generating a random digits. There was no way to &lsquo;tell&rsquo; the generator which digit to generate. None of the neural networks were aware of the existence of classes within the training data.</p>
+<p>I googled &lsquo;class specific gans&rsquo; and eventually discovered that these &lsquo;class specific gans&rsquo; do exist and they are called Conditional GANs.</p>
+<h2 id="what-exactly-is-a-conditional-gan-">What Exactly is a Conditional GAN ?</h2>
+<p>The <strong>condition</strong> in a Conditional GAN is basically the desired class of the generated sample, it is a generative model that allows the generation of targeted data from a given class. Unlike a traditional GAN, it also accounts for the labels while training.</p>
+<h2 id="using-the-labels">Using the labels:</h2>
+<p>I was extremely confused on how the labels were to be used. But then I found the following diagram in the <a href="https://arxiv.org/abs/1411.1784">Conditional-GAN paper</a></p>
+<p><img src="../images/cgan_paper_diagram.png" alt=""></p>
+<ul>
+<li>x represents real-life data.</li>
+<li>z represents random noise.</li>
+<li>y represents the corresponding label.</li>
+<li>D(x|y) and G(z|y) represent the discriminator net and the generator net respectively.</li>
+</ul>
+<h2 id="what-i-did">What I did:</h2>
+<p>I used Conv layers in both the generator and the discriminator. Here&rsquo;s how I used the labels:</p>
+<ul>
+<li>
+<p><strong>The Generator</strong>: Take a look at the diagram below
+<img src="../images/mnist_cgan_generator.png" alt="">
+I concatenated a random noise vector of length 100 with another vector that represents a label of length 10 and passed the resulting tensor through the generator net. Notice that the input tensor has a length of 110. This input vector is passed through transpose-convolution layers to generate a 1x64x64 image.</p>
+</li>
+<li>
+<p><strong>The Discriminator</strong>: Take a look at the diagram below
+<img src="../images/mnist_cgan_discriminator.png" alt="">
+A 1x64x64 image is passed through convolution layers and the resulting tensor of length 10 is concatenated with a label embedding of length 10 and the resulting tensor is passed through the linear layers.  Notice that the first linear layer takes an input of length 20. The final output is a tensor of length 1, which represents the probability of the sample being real or fake.</p>
+</li>
+</ul>
+<h2 id="inference">Inference:</h2>
+<p>I kept an eye on the losses of the models and plotted generated samples after every epoch. After about 7 epochs, the generator was able to generate reasonably good samples. Each frame in the gif below showcases the generators performance through the epochs.</p>
+<p><img src="../images/mnist_cgan_training_timelapse_compressed.gif" alt=""></p>
+<p>Notice how it starts off with alien looking digits, and keeps improving over time. The only form of augmentation I used is random rotation. I believe using more advanced augmentation techniques will improve the overall performance.</p>
+<h2 id="exploring-the-latent-space">Exploring the Latent Space:</h2>
+<p>The generator net (here) accepts a latent vector of length 100 and a label embeddding of length 10. While the network trains, it learns to map these latent points to generated images. Every single latent vector is a point in an n-dimensional space where n is the length of the latent vector, which is 100 in this case.</p>
+<p>What if you take 2 points in this 100-dimensional space and generate samples by interpolating between them? Every adjacent point leads to the generation of a slightly different image. The following gif showcases generated images with latent vectors interpolated between 2 points, looping back and forth between the 2 extremes.</p>
+<p><img src="../images/mnist_cgan_interps_loop_10_compressed.gif" alt=""></p>
+<p>Notice how each frame is slightly different from the previous. Lets visualize some interpolations side by side, with a different set of interpolated points:
+<img src="../images/mnist_cgan_all_interps.png" alt=""></p>
+<p>Check out the <a href="https://colab.research.google.com/github/Mainakdeb/deceptive-digits/blob/main/deceptive-digits.ipynb">colab notebook</a> and the <a href="https://github.com/Mainakdeb/deceptive-digits">Github repository</a>.</p>
+<h2 id="a-far-fetched-idea">A far fetched idea:</h2>
+<p>One thing that I absolutely despise, is writing assignments on paper and upload scanned copies of it. But given the potential of conditional-GANs, its entirely possible to train one (using the EMNIST alphabet dataset) to generate real-looking handwriting, by iterating through each letter of the doc, determining the class using OCR and stiching the generated images together into a virtual page. If I ever build a project surrounding this idea, I&rsquo;ll name it GAN-writing :)</p>
+<h2 id="credits">Credits:</h2>
+<ol>
+<li>The <a href="https://arxiv.org/abs/1411.1784">Conditional-GAN paper</a></li>
+<li>For network visualizations - <a href="https://alexlenail.me/NN-SVG/">NN-SVG</a></li>
+<li>For creating gifs - <a href="https://ezgif.com/">Ezgif</a></li>
+</ol>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

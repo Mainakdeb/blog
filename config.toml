@@ -16,7 +16,7 @@ paginate = 5
 
 [params]
   author = "Mainak Deb"
-  description = "Hello, welcome to Mainak's blog"
+  description = "Hi, welcome to Mainak's blog"
   menu_item_separator = " - "
   [[params.social]]
     name = "github"

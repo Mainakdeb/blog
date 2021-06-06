@@ -5,7 +5,42 @@
     <link>https://mainakdeb.github.io/posts/</link>
     <description>Recent content in Posts on @mainakdeb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mainakdeb.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mainakdeb.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GSoC - Community Bonding</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-community-bonding/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-community-bonding/</guid>
+      <description>This blog post summary of what I&amp;rsquo;ve been doing this week and what I plan to do in the coming week.
+Work Done This Week :   Gave a presentation on the weekly DevoWorm meeting, discussed the goals and deadlines that need to be met in the coming months - link to the slides
+  Read some articles/papers suggested by my mentor that deal with working with communities and collaboration, liked one in particular that talks about &amp;ldquo;bursty&amp;rdquo; communication and how it helps remote teams thrive - link</description>
+    </item>
+    
+    <item>
+      <title>The Next Step - Conditional DCGANs</title>
+      <link>https://mainakdeb.github.io/posts/conditional-dcgans/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/conditional-dcgans/</guid>
+      <description>GANs can generate real-looking samples, but can they be trained to generate conditioned samples? The answer is yes. This blog post documents my learning experience with Conditional GANs and attempts to explain how I was able to generate images of class-specific handwritten digits. The digits you see above are not real, they are generated using a PyTorch based Conditional DCGAN, I&amp;rsquo;ve prepared a colab notebook, feel free to check it out by clicking the badge below.</description>
+    </item>
+    
+    <item>
+      <title>Experimenting With GANs</title>
+      <link>https://mainakdeb.github.io/posts/experimenting-with-gans/</link>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/experimenting-with-gans/</guid>
+      <description>This gif showcases generated samples from a GAN trained on the MNIST dataset. Link to project repository.
+Background : Last saturday, I was browsing YouTube on my phone when the algorithm suggested me a video on GANs by Computerphile. Until that point I had a vague idea of what GANs were, mostly derived from conversations with my brother, but I didn&amp;rsquo;t really know how they worked.
+Anyways, I watched the whole video and was heavily impressed by the whole notion of making computers generate new real-looking data.</description>
+    </item>
+    
     <item>
       <title>How Did I Create This Blog ?</title>
       <link>https://mainakdeb.github.io/posts/how-did-i-create-this-blog-/</link>

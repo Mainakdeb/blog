@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Experimenting With GANs // @mainakdeb</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Mainak Deb" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://mainakdeb.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Experimenting With GANs"/>
+<meta name="twitter:description" content="This gif showcases generated samples from a GAN trained on the MNIST dataset. Link to project repository.
+Background : Last saturday, I was browsing YouTube on my phone when the algorithm suggested me a video on GANs by Computerphile. Until that point I had a vague idea of what GANs were, mostly derived from conversations with my brother, but I didn&rsquo;t really know how they worked.
+Anyways, I watched the whole video and was heavily impressed by the whole notion of making computers generate new real-looking data."/>
+
+    <meta property="og:title" content="Experimenting With GANs" />
+<meta property="og:description" content="This gif showcases generated samples from a GAN trained on the MNIST dataset. Link to project repository.
+Background : Last saturday, I was browsing YouTube on my phone when the algorithm suggested me a video on GANs by Computerphile. Until that point I had a vague idea of what GANs were, mostly derived from conversations with my brother, but I didn&rsquo;t really know how they worked.
+Anyways, I watched the whole video and was heavily impressed by the whole notion of making computers generate new real-looking data." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mainakdeb.github.io/posts/experimenting-with-gans/" />
+<meta property="article:published_time" content="2020-11-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-21T00:00:00+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mainakdeb.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Mainak Deb" /></a>
+      <h1>@mainakdeb</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+      </nav>
+      <p>Hi, welcome to Mainak&#39;s blog</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/Mainakdeb" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/MainakDeb19" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+          <a target="_blank" href="mailto:mainakmayukh2000@gmail.com" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-mail">
+  <title>mail</title>
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Experimenting With GANs</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Nov 21, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+              <a class="tag" href="https://mainakdeb.github.io/tags/gans/">GANs</a>
+              <a class="tag" href="https://mainakdeb.github.io/tags/mnist/">MNIST</a>
+              <a class="tag" href="https://mainakdeb.github.io/tags/dcgan/">DCGAN</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><img src="../images/digit-demo.gif" alt=""></p>
+<p>This gif showcases generated samples from a GAN trained on the MNIST dataset. <a href="https://github.com/Mainakdeb/digit-GAN">Link to project repository</a>.</p>
+<h2 id="background-">Background :</h2>
+<p>Last saturday, I was browsing YouTube on my phone when the algorithm suggested me a video on GANs by Computerphile. Until that point I had a vague idea of what GANs were, mostly derived from conversations with my brother, but I didn&rsquo;t really know how they worked.</p>
+<p>Anyways, I watched the whole video and was heavily impressed by the whole notion of making computers generate new real-looking data. Rob Miles did an excellent job at explaining the core concepts, and the best part is, he did it all using simple easy-to-grasp examples.</p>
+<h2 id="diving-deeper-">Diving Deeper :</h2>
+<p>I spent the next couple days watching lectures on GANs and making notes along the way, trying to wrap my head around the math behind it. <a href="https://www.youtube.com/watch?v=5WoItGTWV54&amp;ab_channel=StanfordUniversitySchoolofEngineering">This Stanford lecture by Serena Yeung</a> was the best one I found. I also had to refer to the following papers multiple times :</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1406.2661">Generative Adversarial  Networks</a> by Ian Goodfellow et al.</li>
+<li>The <a href="https://arxiv.org/abs/1511.06434">DCGAN paper</a> by Alec Radford, Luke Metz, Soumith Chintala.</li>
+</ul>
+<h2 id="what-i-understood-">What I understood :</h2>
+<p>Two neural networks, the Generator(G) and the Discriminator(D) are pitted against one another and trained simultaneously. But what are they aiming to accomplish?</p>
+<ul>
+<li>The <strong>Discriminator</strong> aims to distinguish between real and generated samples.</li>
+<li>The <strong>Generator</strong> aims to produce real-looking samples/images to fool the Discriminator.</li>
+</ul>
+<p>In simple terms, the Generator is like an art-forger who is trying to sharpen its skills, and the Discriminator is like an art-expert which the generator wants to fool.</p>
+<h2 id="the-math-">The Math :</h2>
+<p>The 2 networks are trained in a minimax game formulation:</p>
+<p><img src="../images/minmax.png" alt=""></p>
+<ol>
+<li>x represents a real sample.</li>
+<li>z is random vector in the latent space, or lets just say random noise.</li>
+<li>D(x) is the discriminator output for a real sample x.</li>
+<li>G(z) is the generated output from the generator net with noise z given as input.</li>
+<li>D(G(z)) is the discriminator output for generated fake data G(z).</li>
+<li>E represents the expected value or the average.</li>
+</ol>
+<ul>
+<li>The <strong>Discriminator</strong> wants to make sure D(x) is close to 1 and D(G(x)) is close to 0. It attempts to maximise the following objective.</li>
+</ul>
+<p><img src="../images/discriminator_objective.png" alt=""></p>
+<ul>
+<li>The <strong>Generator</strong> wants to make sure D(G(z)) is close to 1 i.e. fool the discriminator into thinking  generated G(z) is real. It attempts to minimise the following objective.</li>
+</ul>
+<p><img src="../images/generator_objective_weak_grad.png" alt=""></p>
+<p>But in practice, optimizing this generator objective does not work well because it has vanishing gradients early on. So instead, people use a different objective function as shown below:</p>
+<p><img src="../images//generator_objective_practical.png" alt=""></p>
+<p>This(green line) has a higher gradient signal for bad samples i.e. towards the left, hence the model learns more in region of bad samples. The purple line is almost flat (weak gradients) towards the left, which is not suitable for training.</p>
+<p><img src="../images/weak_grad_vs_strong_grad.png" alt=""></p>
+<h2 id="if-all-goes-well">If all goes well:</h2>
+<p>The Generator generates samples indistinguishable from real samples. And the discriminator is forced to guess (with a probability of ½).</p>
+<h2 id="applying-what-i-learned---generating-handwritten-digits-using-pytorch">Applying what I learned - Generating Handwritten Digits using PyTorch:</h2>
+<p>At this point, I had a fair grip over how GANs work. so I decided to experiment further. Below is a diagram that explains the flow of data through the models.</p>
+<p><img src="../images/draw_io_gan.png" alt=""></p>
+<p>I used 2 Convolutional Neural Networks, one as the discriminator and one as a generator. This architecture is inspired from the famous <a href="https://arxiv.org/abs/1511.06434">DCGAN paper</a> by Alec Radford, Luke Metz, Soumith Chintala. I also copied the parameters and guidelines mentioned in the paper which is the reason why I got reasonably good results. I also learned using tensorboard on Google Colab on the way :)</p>
+<p>Some fake samples from the Generator Network are illustrated below.</p>
+<p><img src="../images/generated_digits.png" alt=""></p>
+<p>These samples are far from perfect. In fact they barely look like hand-written digits. But the sheer fact that this is something &lsquo;imagined&rsquo; from scratch by the computer doesn&rsquo;t fail to astound me. If you have read this far, feel free to check out the <a href="https://github.com/Mainakdeb/digit-GAN">project repository.</a></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
