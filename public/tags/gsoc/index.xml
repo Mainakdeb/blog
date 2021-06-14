@@ -5,10 +5,21 @@
     <link>https://mainakdeb.github.io/tags/gsoc/</link>
     <description>Recent content in GSoC on @mainakdeb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC - Coding Period Week 1</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-coding-period-week-1/</link>
+      <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-1/</guid>
+      <description>This blog post showcases what I did last week and what I plan to do next.
+Work Done This Week : 1. JPEG or PNG?   Last week I was able to convert the .tif files from the cell-tracking-challenge dataset into NumPy arrays. The next goal was to save these NumPy arrays as image files.
+  Here&amp;rsquo;s where I made a mistake, I saved the images as .jpeg files.</description>
+    </item>
     
     <item>
       <title>GSoC - Community Bonding</title>
