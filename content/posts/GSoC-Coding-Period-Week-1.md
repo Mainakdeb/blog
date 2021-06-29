@@ -6,7 +6,7 @@ date = "2021-06-14"
 
 This blog post showcases what I did last week and what I plan to do next.
 
-## Work Done This Week :
+## Work Done This Week (June 7th to June 13th)
 
 ### 1. JPEG or PNG?
 

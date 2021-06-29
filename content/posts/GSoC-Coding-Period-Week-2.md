@@ -6,7 +6,7 @@ date = "2021-06-20"
 
 The goal for this week was to upgrade the DevoLearn cell membrane segmentation model. Feel free to check out the code - [Link](https://github.com/Mainakdeb/GSoC-2021/tree/main/cell-membrane-segmentation)
 
-## Work Done This Week :
+## Work Done This Week (June 14th to June 20th)
 
 ### 1. Fixed the Preprocessing Pipeline:
 * Fixed a strange issue that led to an offset in the image filenames.
@@ -23,7 +23,7 @@ The goal for this week was to upgrade the DevoLearn cell membrane segmentation m
 ### 2. New Augmentation techniques:
 * Added in a couple more [Albumentations](https://github.com/albumentations-team/albumentations) based image augmentation techniques.
 ### 3. Automated Hyperparameter Optimization:
-* Used Optuna to automate the process of finding optimal hyperparameters, I used it to optimize the learning rate and batch size to mazimize the IOU score.
+* Used Optuna to automate the process of finding optimal hyperparameters, I used it to optimize the learning rate and batch size to maximize the IOU score.
 * Ran 100 Optuna trials, 1 epoch each, on 10% of available data.
 
 ### 4. Training metrics:

@@ -6,7 +6,7 @@ date = "2021-06-06"
 
 This blog post summary of what I've been doing this week and what I plan to do in the coming week.
 
-## Work Done This Week :
+## Work Done This Week (May 17th to June 6th)
 * Gave a presentation on the weekly DevoWorm meeting, discussed the goals and deadlines that need to be met in the coming months - [link to the slides](https://docs.google.com/presentation/d/1VR5oWVtKlGROYGVXpA4JboOeKzyke3N0hIJUphotOZA/edit?usp=sharing)
 * Read some articles/papers suggested by my mentor that deal with working with communities and collaboration, liked one in particular that talks about "bursty" communication and how it helps remote teams thrive - [link](https://drive.google.com/file/d/1Kf6zMxhCUX0orIAPlDsHfSvzxUoAh9B3/view)
 * Read publications that deal with extracting data from C. elegans embryogenesis data, tried to find possible applications that could be implemented. I've linked to some of the papers I came across below:

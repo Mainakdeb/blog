@@ -13,11 +13,11 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GSoC - Coding Period Week 2"/>
 <meta name="twitter:description" content="The goal for this week was to upgrade the DevoLearn cell membrane segmentation model. Feel free to check out the code - Link
-Work Done This Week : 1. Fixed the Preprocessing Pipeline:  Fixed a strange issue that led to an offset in the image filenames. Used PNG format to store the images instead of JPG (which was being used). The JPG format led to lossy edges in segmentation maps, which was being tackled using OpenCV based operations, but that led to larger gaps between the segmentation maps of individual cells."/>
+Work Done This Week (June 14th to June 20th) 1. Fixed the Preprocessing Pipeline:  Fixed a strange issue that led to an offset in the image filenames. Used PNG format to store the images instead of JPG (which was being used). The JPG format led to lossy edges in segmentation maps, which was being tackled using OpenCV based operations, but that led to larger gaps between the segmentation maps of individual cells."/>
 
     <meta property="og:title" content="GSoC - Coding Period Week 2" />
 <meta property="og:description" content="The goal for this week was to upgrade the DevoLearn cell membrane segmentation model. Feel free to check out the code - Link
-Work Done This Week : 1. Fixed the Preprocessing Pipeline:  Fixed a strange issue that led to an offset in the image filenames. Used PNG format to store the images instead of JPG (which was being used). The JPG format led to lossy edges in segmentation maps, which was being tackled using OpenCV based operations, but that led to larger gaps between the segmentation maps of individual cells." />
+Work Done This Week (June 14th to June 20th) 1. Fixed the Preprocessing Pipeline:  Fixed a strange issue that led to an offset in the image filenames. Used PNG format to store the images instead of JPG (which was being used). The JPG format led to lossy edges in segmentation maps, which was being tackled using OpenCV based operations, but that led to larger gaps between the segmentation maps of individual cells." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mainakdeb.github.io/posts/gsoc-coding-period-week-2/" />
 <meta property="article:published_time" content="2021-06-20T00:00:00+00:00" />
@@ -84,7 +84,7 @@ Work Done This Week : 1. Fixed the Preprocessing Pipeline:  Fixed a strange issu
     </header>
     <div class="post-content">
       <p>The goal for this week was to upgrade the DevoLearn cell membrane segmentation model. Feel free to check out the code - <a href="https://github.com/Mainakdeb/GSoC-2021/tree/main/cell-membrane-segmentation">Link</a></p>
-<h2 id="work-done-this-week-">Work Done This Week :</h2>
+<h2 id="work-done-this-week-june-14th-to-june-20th">Work Done This Week (June 14th to June 20th)</h2>
 <h3 id="1-fixed-the-preprocessing-pipeline">1. Fixed the Preprocessing Pipeline:</h3>
 <ul>
 <li>Fixed a strange issue that led to an offset in the image filenames.</li>
@@ -106,7 +106,7 @@ Work Done This Week : 1. Fixed the Preprocessing Pipeline:  Fixed a strange issu
 </ul>
 <h3 id="3-automated-hyperparameter-optimization">3. Automated Hyperparameter Optimization:</h3>
 <ul>
-<li>Used Optuna to automate the process of finding optimal hyperparameters, I used it to optimize the learning rate and batch size to mazimize the IOU score.</li>
+<li>Used Optuna to automate the process of finding optimal hyperparameters, I used it to optimize the learning rate and batch size to maximize the IOU score.</li>
 <li>Ran 100 Optuna trials, 1 epoch each, on 10% of available data.</li>
 </ul>
 <h3 id="4-training-metrics">4. Training metrics:</h3>

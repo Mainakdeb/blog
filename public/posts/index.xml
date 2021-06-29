@@ -5,10 +5,21 @@
     <link>https://mainakdeb.github.io/posts/</link>
     <description>Recent content in Posts on @mainakdeb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Jun 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC - Coding Period Week 3</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-coding-period-week-3/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-3/</guid>
+      <description>Work Done This Week (June 21st to June 27th)   Converted the upgraded segmentation model into ONNX format.
+  Ran inference on the ONNX model (colab and local environment) to make sure it works. Then used Gradio to build a GUI.
+  The next step was to host this online. Gradio has their own hosting service, but that costs $7/month. Looked into ways of hosting apps online for free, decided to go with Heroku.</description>
+    </item>
     
     <item>
       <title>GSoC - Coding Period Week 2</title>
@@ -17,7 +28,7 @@
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-2/</guid>
       <description>The goal for this week was to upgrade the DevoLearn cell membrane segmentation model. Feel free to check out the code - Link
-Work Done This Week : 1. Fixed the Preprocessing Pipeline:  Fixed a strange issue that led to an offset in the image filenames. Used PNG format to store the images instead of JPG (which was being used). The JPG format led to lossy edges in segmentation maps, which was being tackled using OpenCV based operations, but that led to larger gaps between the segmentation maps of individual cells.</description>
+Work Done This Week (June 14th to June 20th) 1. Fixed the Preprocessing Pipeline:  Fixed a strange issue that led to an offset in the image filenames. Used PNG format to store the images instead of JPG (which was being used). The JPG format led to lossy edges in segmentation maps, which was being tackled using OpenCV based operations, but that led to larger gaps between the segmentation maps of individual cells.</description>
     </item>
     
     <item>
@@ -27,8 +38,8 @@ Work Done This Week : 1. Fixed the Preprocessing Pipeline:  Fixed a strange issu
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-1/</guid>
       <description>This blog post showcases what I did last week and what I plan to do next.
-Work Done This Week : 1. JPEG or PNG?   Last week I was able to convert the .tif files from the cell-tracking-challenge dataset into NumPy arrays. The next goal was to save these NumPy arrays as image files.
-  Here&amp;rsquo;s where I made a mistake, I saved the images as .jpeg files.</description>
+Work Done This Week (June 7th to June 13th) 1. JPEG or PNG?   Last week I was able to convert the .tif files from the cell-tracking-challenge dataset into NumPy arrays. The next goal was to save these NumPy arrays as image files.
+  Here&amp;rsquo;s where I made a mistake, I saved the images as .</description>
     </item>
     
     <item>
@@ -38,7 +49,7 @@ Work Done This Week : 1. JPEG or PNG?   Last week I was able to convert the .tif
       
       <guid>https://mainakdeb.github.io/posts/gsoc-community-bonding/</guid>
       <description>This blog post summary of what I&amp;rsquo;ve been doing this week and what I plan to do in the coming week.
-Work Done This Week :   Gave a presentation on the weekly DevoWorm meeting, discussed the goals and deadlines that need to be met in the coming months - link to the slides
+Work Done This Week (May 17th to June 6th)   Gave a presentation on the weekly DevoWorm meeting, discussed the goals and deadlines that need to be met in the coming months - link to the slides
   Read some articles/papers suggested by my mentor that deal with working with communities and collaboration, liked one in particular that talks about &amp;ldquo;bursty&amp;rdquo; communication and how it helps remote teams thrive - link</description>
     </item>
     
