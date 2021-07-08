@@ -29,6 +29,6 @@ This blog post summary of what I've been doing this week and what I plan to do i
   * [NBviewer](https://nbviewer.jupyter.org/github/Mainakdeb/GSoC-2021/blob/main/3d-embryo-segmentation/explore_and_preprocess_data.ipynb)
   * [Github repository](https://github.com/Mainakdeb/GSoC-2021)
 ## Planned :
-* Begin working on upgrading the DevoLearn embryo segmentation model. 
+* Begin working on upgrading the DevoLearn cell membrane segmentation model. 
 * Explore and clean the cell-tracking-challenge dataset. 
 * Discuss in detail about how the cell-tracking-challenge dataset could be used to automate the process of 3D cell-segmentation.
