@@ -6,7 +6,7 @@ date = "2021-07-05"
 
 Most of my time this week was spent on building the training pipeline for the proposed cell nucleus segmentation model in C. elegans embryos.
 
-## Work Done This Week (June 21st to June 27th)
+## Work Done This Week (June 28th to July 4th)
 
 * Back in [week-1](https://mainakdeb.github.io/posts/gsoc-coding-period-week-1/), I had worked on preprocessing data from the cell-tracking-challenge dataset. The dataset was extracted from `.tif` files and saved as pairs of `.png` files.
 
@@ -34,8 +34,8 @@ Most of my time this week was spent on building the training pipeline for the pr
     ![](../images/gsoc-coding-period-week-4/inference_2_epochs.png)
 
 * Feel free to check out this work:
-    * Github - [Link](https://github.com/Mainakdeb/GSoC-2021/blob/main/cell-nucleus-segmentation/train_segmentation_model.ipynb)
-    * NBViewer - [Link](https://nbviewer.jupyter.org/github/Mainakdeb/GSoC-2021/blob/main/cell-nucleus-segmentation/train_segmentation_model.ipynb)
+    * Github - [Link](https://github.com/Mainakdeb/GSoC-2021/blob/1cbe0e8429671491168f3cceaa602d5953e85df3/cell-nucleus-segmentation/train_segmentation_model.ipynb)
+    * NBViewer - [Link](https://nbviewer.jupyter.org/github/Mainakdeb/GSoC-2021/blob/1cbe0e8429671491168f3cceaa602d5953e85df3/cell-nucleus-segmentation/train_segmentation_model.ipynb)
 
 
 ## Planned:

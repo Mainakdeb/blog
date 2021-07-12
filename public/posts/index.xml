@@ -5,10 +5,19 @@
     <link>https://mainakdeb.github.io/posts/</link>
     <description>Recent content in Posts on @mainakdeb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jul 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC - Coding Period Week 5</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-coding-period-week-5/</link>
+      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-5/</guid>
+      <description>Work Done This Week (July 5th to July 12th)  Refactored the training loop for the nucleus segentation model, this enabled faster prototyping and experimentation. Integrated Optuna for automated hyperparameter optimization. Ran 200 optuna trials to find training hyperparams. Optuna samples hyperparams from a given range, which in this case was -  Learning rate: 0.5e-3 to 20e-3 Batch Size: 8 to 64   Each trial trained the model on 10% of available data for 3 epochs, and returned the resulting IOU score.</description>
+    </item>
     
     <item>
       <title>GSoC - Coding Period Week 4</title>
@@ -17,7 +26,7 @@
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-4/</guid>
       <description>Most of my time this week was spent on building the training pipeline for the proposed cell nucleus segmentation model in C. elegans embryos.
-Work Done This Week (June 21st to June 27th)   Back in week-1, I had worked on preprocessing data from the cell-tracking-challenge dataset. The dataset was extracted from .tif files and saved as pairs of .png files.
+Work Done This Week (June 28th to July 4th)   Back in week-1, I had worked on preprocessing data from the cell-tracking-challenge dataset. The dataset was extracted from .tif files and saved as pairs of .png files.
   To prevent anu CPU bottlenecks while training, I used PIL to resize all the training images to 1x256x256 beforehand.</description>
     </item>
     
@@ -82,16 +91,6 @@ Work Done This Week (May 17th to June 6th)   Gave a presentation on the weekly D
       <description>This gif showcases generated samples from a GAN trained on the MNIST dataset. Link to project repository.
 Background : Last saturday, I was browsing YouTube on my phone when the algorithm suggested me a video on GANs by Computerphile. Until that point I had a vague idea of what GANs were, mostly derived from conversations with my brother, but I didn&amp;rsquo;t really know how they worked.
 Anyways, I watched the whole video and was heavily impressed by the whole notion of making computers generate new real-looking data.</description>
-    </item>
-    
-    <item>
-      <title>How Did I Create This Blog ?</title>
-      <link>https://mainakdeb.github.io/posts/how-did-i-create-this-blog-/</link>
-      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mainakdeb.github.io/posts/how-did-i-create-this-blog-/</guid>
-      <description>Intro : I should have updated my blog long ago, but here I am, about 7 months late, with a brand new blog. So, how did I create this and host it online on Github Pages, given that I have near zero experience in web-dev?
-My brother suggested me to use Hugo for my new blog, I googled &amp;lsquo;Hugo templates&amp;rsquo; and ended up at https://themes.gohugo.io/. I spent around an hour to shortlist and pick a suitable theme.</description>
     </item>
     
   </channel>

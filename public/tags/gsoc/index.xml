@@ -5,10 +5,19 @@
     <link>https://mainakdeb.github.io/tags/gsoc/</link>
     <description>Recent content in GSoC on @mainakdeb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jul 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC - Coding Period Week 5</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-coding-period-week-5/</link>
+      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-5/</guid>
+      <description>Work Done This Week (July 5th to July 12th)  Refactored the training loop for the nucleus segentation model, this enabled faster prototyping and experimentation. Integrated Optuna for automated hyperparameter optimization. Ran 200 optuna trials to find training hyperparams. Optuna samples hyperparams from a given range, which in this case was -  Learning rate: 0.5e-3 to 20e-3 Batch Size: 8 to 64   Each trial trained the model on 10% of available data for 3 epochs, and returned the resulting IOU score.</description>
+    </item>
     
     <item>
       <title>GSoC - Coding Period Week 4</title>
@@ -17,7 +26,7 @@
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-4/</guid>
       <description>Most of my time this week was spent on building the training pipeline for the proposed cell nucleus segmentation model in C. elegans embryos.
-Work Done This Week (June 21st to June 27th)   Back in week-1, I had worked on preprocessing data from the cell-tracking-challenge dataset. The dataset was extracted from .tif files and saved as pairs of .png files.
+Work Done This Week (June 28th to July 4th)   Back in week-1, I had worked on preprocessing data from the cell-tracking-challenge dataset. The dataset was extracted from .tif files and saved as pairs of .png files.
   To prevent anu CPU bottlenecks while training, I used PIL to resize all the training images to 1x256x256 beforehand.</description>
     </item>
     
