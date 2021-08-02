@@ -5,10 +5,42 @@
     <link>https://mainakdeb.github.io/tags/gsoc/</link>
     <description>Recent content in GSoC on @mainakdeb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC - Coding Period Week 8</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-coding-period-week-8/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-8/</guid>
+      <description>Work Done This Week (July 26th to August 1st)   Converted the DevoLearn Lineage Population model into ONNX.
+  Defined the funtions needed to run the Lineage population model via the GUI.
+  Ran tests on Localhost to ensure everything is in place.
+  Created the required files for hosting the web-app online using Heroku.
+ Procfile - Procfile is a mechanism for declaring what commands are run by the heroku dyno.</description>
+    </item>
+    
+    <item>
+      <title>GSoC - Coding Period Week 7</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-coding-period-week-7/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-7/</guid>
+      <description>Work Done This Week (July 20th to July 25th)  Converted the nucleus segmentation model into ONNX (Link to code) Began working on the DevoLearn GUI, this time using Streamlit, this would support multiple models on one web-app.  Built the pipeline to run inference using the ONNX models, ran tests to ensure the 2 segmentation models work via the GUI. The user will have the ability to select any of the DevoLearn models from the drop down menu to the left, then drag and drop inputs.</description>
+    </item>
+    
+    <item>
+      <title>GSoC - Coding Period Week 6</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-coding-period-week-6/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-6/</guid>
+      <description>Work Done This Week (July 12th to July 19th)  Swapped out the model for the Cell membrane segmentation with the upgraded model in DevoLearn&amp;rsquo;s repository, ran tests locally before pushing because Travis has been discontinued. (Link to commit)    Renamed the embryo_segmentor package to cell_membrane_segmentor. The reason for this renaming is to avoid naming conflicts when new segmentation models are added. (Link to commit)
+ Old syntax - from devolearn import embryo_segmentor New syntax - from devolearn import cell_membrane_segmentor    Integrated the new nucleus segmentation model into the library (Link to commit)</description>
+    </item>
     
     <item>
       <title>GSoC - Coding Period Week 5</title>

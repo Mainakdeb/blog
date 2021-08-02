@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>GSoC - Coding Period Week 6 // @mainakdeb</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Mainak Deb" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://mainakdeb.github.io/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GSoC - Coding Period Week 6"/>
+<meta name="twitter:description" content="Work Done This Week (July 12th to July 19th)  Swapped out the model for the Cell membrane segmentation with the upgraded model in DevoLearn&rsquo;s repository, ran tests locally before pushing because Travis has been discontinued. (Link to commit)    Renamed the embryo_segmentor package to cell_membrane_segmentor. The reason for this renaming is to avoid naming conflicts when new segmentation models are added. (Link to commit)
+ Old syntax - from devolearn import embryo_segmentor New syntax - from devolearn import cell_membrane_segmentor    Integrated the new nucleus segmentation model into the library (Link to commit)"/>
+
+    <meta property="og:title" content="GSoC - Coding Period Week 6" />
+<meta property="og:description" content="Work Done This Week (July 12th to July 19th)  Swapped out the model for the Cell membrane segmentation with the upgraded model in DevoLearn&rsquo;s repository, ran tests locally before pushing because Travis has been discontinued. (Link to commit)    Renamed the embryo_segmentor package to cell_membrane_segmentor. The reason for this renaming is to avoid naming conflicts when new segmentation models are added. (Link to commit)
+ Old syntax - from devolearn import embryo_segmentor New syntax - from devolearn import cell_membrane_segmentor    Integrated the new nucleus segmentation model into the library (Link to commit)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mainakdeb.github.io/posts/gsoc-coding-period-week-6/" />
+<meta property="article:published_time" content="2021-07-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-19T00:00:00+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mainakdeb.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Mainak Deb" /></a>
+      <h1>@mainakdeb</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+      </nav>
+      <p>Hi, welcome to Mainak&#39;s blog</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/Mainakdeb" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://twitter.com/MainakDeb19" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>Twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">GSoC - Coding Period Week 6</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 19, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://mainakdeb.github.io/tags/gsoc/">GSoC</a>
+              <a class="tag" href="https://mainakdeb.github.io/tags/devoworm/">DevoWorm</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="work-done-this-week-july-12th-to-july-19th">Work Done This Week (July 12th to July 19th)</h2>
+<ul>
+<li>Swapped out the model for the Cell membrane segmentation with the upgraded model in DevoLearn&rsquo;s repository, ran tests locally before pushing because Travis has been discontinued. (<a href="https://github.com/DevoLearn/devolearn/commit/e65b2f71f597fcfc1358f7fb44ea36e3e9fc9f3e">Link to commit</a>)</li>
+</ul>
+<p><img src="../images/gsoc-coding-period-week-6/tests_local_3_models.png" alt=""></p>
+<ul>
+<li>
+<p>Renamed the <code>embryo_segmentor</code> package to <code>cell_membrane_segmentor</code>. The reason for this renaming is to avoid naming conflicts when new segmentation models are added. (<a href="https://github.com/DevoLearn/devolearn/commit/e2da9401d6712e7b0c6667ba803e50bda8e9457c">Link to commit</a>)</p>
+<ul>
+<li>Old syntax - <code>from devolearn import embryo_segmentor</code></li>
+<li>New syntax - <code>from devolearn import cell_membrane_segmentor</code></li>
+</ul>
+</li>
+<li>
+<p>Integrated the new nucleus segmentation model into the library (<a href="https://github.com/DevoLearn/devolearn/commit/bc59be395a68e4565ecde007426c778cc3f047ed">Link to commit</a>)</p>
+<ul>
+<li>Wrote the necessary functions to run inference, on CPU and GPU.</li>
+<li>Made additions to the testing script to accomodate this additional model.</li>
+<li>Steps for usage:
+<ol>
+<li><code>from devolearn import cell_nucleus_segmentor</code></li>
+<li><code>segmentor = cell_nucleus_segmentor(device='cuda')</code></li>
+<li><code>pred = segmentor.predict(image_path = &quot;input_image.png&quot;)</code></li>
+<li><code>plt.imshow(pred)</code></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>Inference Examples:</p>
+<ol>
+<li>Input image with Varying Z axis -</li>
+</ol>
+<p><img src="../images/gsoc-coding-period-week-6/z_infer.gif" alt=""></p>
+<ol start="2">
+<li>Inputs varying through time -</li>
+</ol>
+<p><img src="../images/gsoc-coding-period-week-6/time_infer.gif" alt=""></p>
+</li>
+</ul>
+<h2 id="planned">Planned:</h2>
+<ul>
+<li>Build a GUI for all DevoLearn models and host them online.</li>
+<li>Look into ways of running bulk inference using the web-GUI.</li>
+<li>Move from Travis CI to Github Actions.</li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
