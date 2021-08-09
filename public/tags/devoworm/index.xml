@@ -5,10 +5,21 @@
     <link>https://mainakdeb.github.io/tags/devoworm/</link>
     <description>Recent content in DevoWorm on @mainakdeb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/tags/devoworm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC - Coding Period Week 9</title>
+      <link>https://mainakdeb.github.io/posts/gsoc-coding-period-week-9/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-9/</guid>
+      <description>Work Done This Week (August 2nd to August 8th)   Replaced the static images on the DevoLearn web-app with interactive Plotly images, this will allow users to :
+ Zoom into images Pan across the zoomed image. View images in full-screen mode Save images as PNG    The gif below showcases the new interactive plots.
+    Added a threshold slider for the 2 segmentation models.</description>
+    </item>
     
     <item>
       <title>GSoC - Coding Period Week 8</title>
