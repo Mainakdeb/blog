@@ -18,7 +18,9 @@ This blog post showcases what I did last week and what I plan to do next.
 
 * I used plotly to zoom into the saved `.jpeg` files, and noticed that the edges of the segmentation masks were noisy, then I plotted the images in 3D, with z axis as pixel value.
 
-![](../images/gsoc-coding-period-week-1/compare_png_jpeg.png)
+<img src="../images/gsoc-coding-period-week-1/compare_png_jpeg.png" alt="" width="700" height="">
+<img src="" alt="" width="1000" height="">
+
 
 * Turns out, JPEG is a lossy compression method - it is designed to save images using less bits even if it changes the pixel values as long as it "looks good" to a human observer.
 
@@ -42,7 +44,8 @@ This blog post showcases what I did last week and what I plan to do next.
 * [Gradio](https://www.gradio.app/) has been all over the ML community lately, I decided to give it a try. 
 * The Gif below showcases a simple GUI (prototype) for the existing DevoLearn embryo segmentation model.
 
-![](../images/gsoc-coding-period-week-1/gui_demo.gif)
+<img src="../images/gsoc-coding-period-week-1/gui_demo.gif" alt="" width="700" height="">
+
 
 * This still needs a lot more work. I'll try to resume work on this after I'm done with the proposed work for next week.
 

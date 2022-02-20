@@ -8,7 +8,7 @@ date = "2021-07-19"
 
 * Swapped out the model for the Cell membrane segmentation with the upgraded model in DevoLearn's repository, ran tests locally before pushing because Travis has been discontinued. ([Link to commit](https://github.com/DevoLearn/devolearn/commit/e65b2f71f597fcfc1358f7fb44ea36e3e9fc9f3e))
 
-![](../images/gsoc-coding-period-week-6/tests_local_3_models.png)
+<img src="../images/gsoc-coding-period-week-6/tests_local_3_models.png" alt="" width="1000" height="">
 
 * Renamed the `embryo_segmentor` package to `cell_membrane_segmentor`. The reason for this renaming is to avoid naming conflicts when new segmentation models are added. ([Link to commit](https://github.com/DevoLearn/devolearn/commit/e2da9401d6712e7b0c6667ba803e50bda8e9457c))
     * Old syntax - `from devolearn import embryo_segmentor`
@@ -25,12 +25,10 @@ date = "2021-07-19"
 
 * Inference Examples:
     1. Input image with Varying Z axis -
-
-    ![](../images/gsoc-coding-period-week-6/z_infer.gif)
+    <img src="../images/gsoc-coding-period-week-6/z_infer.gif" alt="" width="1000" height="">
 
     2. Inputs varying through time -
-
-    ![](../images/gsoc-coding-period-week-6/time_infer.gif)
+    <img src="../images/gsoc-coding-period-week-6/time_infer.gif" alt="" width="1000" height="">
 
 
 ## Planned:

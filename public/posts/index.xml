@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on @mainakdeb</title>
+    <title>Posts on Mainak&#39;s blog</title>
     <link>https://mainakdeb.github.io/posts/</link>
-    <description>Recent content in Posts on @mainakdeb</description>
+    <description>Recent content in Posts on Mainak&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -16,9 +17,7 @@
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-9/</guid>
-      <description>Work Done This Week (August 2nd to August 8th)   Replaced the static images on the DevoLearn web-app with interactive Plotly images, this will allow users to :
- Zoom into images Pan across the zoomed image. View images in full-screen mode Save images as PNG    The gif below showcases the new interactive plots.
-    Added a threshold slider for the 2 segmentation models.</description>
+      <description>Work Done This Week (August 2nd to August 8th)   Replaced the static images on the DevoLearn web-app with interactive Plotly images, this will allow users to :</description>
     </item>
     
     <item>
@@ -27,11 +26,7 @@
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-8/</guid>
-      <description>Work Done This Week (July 26th to August 1st)   Converted the DevoLearn Lineage Population model into ONNX.
-  Defined the funtions needed to run the Lineage population model via the GUI.
-  Ran tests on Localhost to ensure everything is in place.
-  Created the required files for hosting the web-app online using Heroku.
- Procfile - Procfile is a mechanism for declaring what commands are run by the heroku dyno.</description>
+      <description>Work Done This Week (July 26th to August 1st)   Converted the DevoLearn Lineage Population model into ONNX.</description>
     </item>
     
     <item>
@@ -40,7 +35,7 @@
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-7/</guid>
-      <description>Work Done This Week (July 20th to July 25th)  Converted the nucleus segmentation model into ONNX (Link to code) Began working on the DevoLearn GUI, this time using Streamlit, this would support multiple models on one web-app.  Built the pipeline to run inference using the ONNX models, ran tests to ensure the 2 segmentation models work via the GUI. The user will have the ability to select any of the DevoLearn models from the drop down menu to the left, then drag and drop inputs.</description>
+      <description>Work Done This Week (July 20th to July 25th)  Converted the nucleus segmentation model into ONNX (Link to code) Began working on the DevoLearn GUI, this time using Streamlit, this would support multiple models on one web-app.</description>
     </item>
     
     <item>
@@ -49,8 +44,7 @@
       <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-6/</guid>
-      <description>Work Done This Week (July 12th to July 19th)  Swapped out the model for the Cell membrane segmentation with the upgraded model in DevoLearn&amp;rsquo;s repository, ran tests locally before pushing because Travis has been discontinued. (Link to commit)    Renamed the embryo_segmentor package to cell_membrane_segmentor. The reason for this renaming is to avoid naming conflicts when new segmentation models are added. (Link to commit)
- Old syntax - from devolearn import embryo_segmentor New syntax - from devolearn import cell_membrane_segmentor    Integrated the new nucleus segmentation model into the library (Link to commit)</description>
+      <description>Work Done This Week (July 12th to July 19th)  Swapped out the model for the Cell membrane segmentation with the upgraded model in DevoLearn&amp;rsquo;s repository, ran tests locally before pushing because Travis has been discontinued.</description>
     </item>
     
     <item>
@@ -59,7 +53,7 @@
       <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-5/</guid>
-      <description>Work Done This Week (July 5th to July 12th)  Refactored the training loop for the nucleus segentation model, this enabled faster prototyping and experimentation. Integrated Optuna for automated hyperparameter optimization. Ran 200 optuna trials to find training hyperparams. Optuna samples hyperparams from a given range, which in this case was -  Learning rate: 0.5e-3 to 20e-3 Batch Size: 8 to 64   Each trial trained the model on 10% of available data for 3 epochs, and returned the resulting IOU score.</description>
+      <description>Work Done This Week (July 5th to July 12th)  Refactored the training loop for the nucleus segentation model, this enabled faster prototyping and experimentation.</description>
     </item>
     
     <item>
@@ -68,9 +62,7 @@
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-4/</guid>
-      <description>Most of my time this week was spent on building the training pipeline for the proposed cell nucleus segmentation model in C. elegans embryos.
-Work Done This Week (June 28th to July 4th)   Back in week-1, I had worked on preprocessing data from the cell-tracking-challenge dataset. The dataset was extracted from .tif files and saved as pairs of .png files.
-  To prevent anu CPU bottlenecks while training, I used PIL to resize all the training images to 1x256x256 beforehand.</description>
+      <description>Most of my time this week was spent on building the training pipeline for the proposed cell nucleus segmentation model in C.</description>
     </item>
     
     <item>
@@ -79,9 +71,7 @@ Work Done This Week (June 28th to July 4th)   Back in week-1, I had worked on pr
       <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-3/</guid>
-      <description>Work Done This Week (June 21st to June 27th)   Converted the upgraded segmentation model into ONNX format.
-  Ran inference on the ONNX model (colab and local environment) to make sure it works. Then used Gradio to build a GUI.
-  The next step was to host this online. Gradio has their own hosting service, but that costs $7/month. Looked into ways of hosting apps online for free, decided to go with Heroku.</description>
+      <description>Work Done This Week (June 21st to June 27th)   Converted the upgraded segmentation model into ONNX format.</description>
     </item>
     
     <item>
@@ -90,8 +80,7 @@ Work Done This Week (June 28th to July 4th)   Back in week-1, I had worked on pr
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-2/</guid>
-      <description>The goal for this week was to upgrade the DevoLearn cell membrane segmentation model. Feel free to check out the code - Link
-Work Done This Week (June 14th to June 20th) 1. Fixed the Preprocessing Pipeline:  Fixed a strange issue that led to an offset in the image filenames. Used PNG format to store the images instead of JPG (which was being used). The JPG format led to lossy edges in segmentation maps, which was being tackled using OpenCV based operations, but that led to larger gaps between the segmentation maps of individual cells.</description>
+      <description>The goal for this week was to upgrade the DevoLearn cell membrane segmentation model.</description>
     </item>
     
     <item>
@@ -100,9 +89,7 @@ Work Done This Week (June 14th to June 20th) 1. Fixed the Preprocessing Pipeline
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-coding-period-week-1/</guid>
-      <description>This blog post showcases what I did last week and what I plan to do next.
-Work Done This Week (June 7th to June 13th) 1. JPEG or PNG?   Last week I was able to convert the .tif files from the cell-tracking-challenge dataset into NumPy arrays. The next goal was to save these NumPy arrays as image files.
-  Here&amp;rsquo;s where I made a mistake, I saved the images as .</description>
+      <description>This blog post showcases what I did last week and what I plan to do next.</description>
     </item>
     
     <item>
@@ -111,9 +98,7 @@ Work Done This Week (June 7th to June 13th) 1. JPEG or PNG?   Last week I was ab
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/gsoc-community-bonding/</guid>
-      <description>This blog post summary of what I&amp;rsquo;ve been doing this week and what I plan to do in the coming week.
-Work Done This Week (May 17th to June 6th)   Gave a presentation on the weekly DevoWorm meeting, discussed the goals and deadlines that need to be met in the coming months - link to the slides
-  Read some articles/papers suggested by my mentor that deal with working with communities and collaboration, liked one in particular that talks about &amp;ldquo;bursty&amp;rdquo; communication and how it helps remote teams thrive - link</description>
+      <description>This blog post summary of what I&amp;rsquo;ve been doing this week and what I plan to do in the coming week.</description>
     </item>
     
     <item>
@@ -122,7 +107,7 @@ Work Done This Week (May 17th to June 6th)   Gave a presentation on the weekly D
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/conditional-dcgans/</guid>
-      <description>GANs can generate real-looking samples, but can they be trained to generate conditioned samples? The answer is yes. This blog post documents my learning experience with Conditional GANs and attempts to explain how I was able to generate images of class-specific handwritten digits. The digits you see above are not real, they are generated using a PyTorch based Conditional DCGAN, I&amp;rsquo;ve prepared a colab notebook, feel free to check it out by clicking the badge below.</description>
+      <description>GANs can generate real-looking samples, but can they be trained to generate conditioned samples?</description>
     </item>
     
     <item>
@@ -131,9 +116,16 @@ Work Done This Week (May 17th to June 6th)   Gave a presentation on the weekly D
       <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/experimenting-with-gans/</guid>
-      <description>This gif showcases generated samples from a GAN trained on the MNIST dataset. Link to project repository.
-Background : Last saturday, I was browsing YouTube on my phone when the algorithm suggested me a video on GANs by Computerphile. Until that point I had a vague idea of what GANs were, mostly derived from conversations with my brother, but I didn&amp;rsquo;t really know how they worked.
-Anyways, I watched the whole video and was heavily impressed by the whole notion of making computers generate new real-looking data.</description>
+      <description>This gif showcases generated samples from a GAN trained on the MNIST dataset.</description>
+    </item>
+    
+    <item>
+      <title>How Did I Create This Blog ?</title>
+      <link>https://mainakdeb.github.io/posts/how-did-i-create-this-blog-/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/how-did-i-create-this-blog-/</guid>
+      <description>Intro : I should have updated my blog long ago, but here I am, about 7 months late, with a brand new blog.</description>
     </item>
     
   </channel>

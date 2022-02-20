@@ -21,7 +21,7 @@ date = "2021-06-28"
 
 * Deployed a bare-bones version of the app online.
 
-    ![](../images/gsoc-coding-period-week-3/devolearn-web-demo-1.gif)
+    <img src="../images/gsoc-coding-period-week-3/devolearn-web-demo-1.gif" alt="" width="700" height="">
 
 * Adding the centroid mapping feature turned out to be tricky. It worked on local-host, but did not work when deployed on Heroku. 
 
@@ -31,7 +31,10 @@ date = "2021-06-28"
 
 * Turns out, it was in issue with OpenCV's dependency on libSM6. I replaced `opencv-python==4.5.2.54` with `opencv-python-headless==4.5.2.54` and it worked!
 
-    ![](../images/gsoc-coding-period-week-3/devolearn-web-demo-2.gif)
+    <img src="../images/gsoc-coding-period-week-3/devolearn-web-demo-2.gif" alt="" width="700" height="">
+     
+
+
 
 * Not everybody has images of C. elegans embryos saved on their computer, so I decided to add in some examples on the site. 
 

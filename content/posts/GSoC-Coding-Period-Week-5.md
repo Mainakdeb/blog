@@ -14,7 +14,10 @@ date = "2021-07-12"
 * Each trial trained the model on 10% of available data for 3 epochs, and returned the resulting IOU score.
 * The hyperparams from the best optuna trial is shown in the image below
 
-![](../images/gsoc-coding-period-week-5/best_params.png)
+
+<img src="../images/gsoc-coding-period-week-5/best_params.png" alt="" width="1000" height="">
+<img src="" alt="" width="1000" height="">
+
 
 * As a recap, the model details are :
     * Type - Feature Pyramid Network
@@ -22,15 +25,18 @@ date = "2021-07-12"
 
 * Trained the model for 50 epochs, the training metrics are showcased below.
 
-![](../images/gsoc-coding-period-week-5/train_metrics.png)
+<img src="../images/gsoc-coding-period-week-5/train_metrics.png" alt="" width="1000" height="">
+
 
 * The model seems to perform well, even when the inputs are super noisy/underexposed. The GIF below shows model predictions on 2D slices of 3D data at one point in time.
 
-![](../images/gsoc-coding-period-week-5/slices.gif)
+<img src="../images/gsoc-coding-period-week-5/slices.gif" alt="" width="1000" height="">
+
 
 * More inference examples:
 
-![](../images/gsoc-coding-period-week-5/infer_collage_nuc_seg.png)
+<img src="../images/gsoc-coding-period-week-5/infer_collage_nuc_seg.png" alt="" width="1000" height="">
+
 
 * Feel free to check out this work:
     * Github - [Link](https://github.com/Mainakdeb/GSoC-2021/blob/main/cell-nucleus-segmentation/train_segmentation_model.ipynb)

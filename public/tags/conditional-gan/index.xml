@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Conditional-GAN on @mainakdeb</title>
+    <title>Conditional-GAN on Mainak&#39;s blog</title>
     <link>https://mainakdeb.github.io/tags/conditional-gan/</link>
-    <description>Recent content in Conditional-GAN on @mainakdeb</description>
+    <description>Recent content in Conditional-GAN on Mainak&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/tags/conditional-gan/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +17,7 @@
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/posts/conditional-dcgans/</guid>
-      <description>GANs can generate real-looking samples, but can they be trained to generate conditioned samples? The answer is yes. This blog post documents my learning experience with Conditional GANs and attempts to explain how I was able to generate images of class-specific handwritten digits. The digits you see above are not real, they are generated using a PyTorch based Conditional DCGAN, I&amp;rsquo;ve prepared a colab notebook, feel free to check it out by clicking the badge below.</description>
+      <description>GANs can generate real-looking samples, but can they be trained to generate conditioned samples?</description>
     </item>
     
   </channel>

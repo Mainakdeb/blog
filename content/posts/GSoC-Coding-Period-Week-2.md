@@ -18,7 +18,7 @@ The goal for this week was to upgrade the DevoLearn cell membrane segmentation m
     * Original data - [Paper Link](https://www.researchgate.net/publication/332572299_3DMMS_Robust_3D_Membrane_Morphological_Segmentation_of_C_elegans_embryo), [Data on Figshare](https://figshare.com/articles/dataset/Dataset_for_MMS/7781777)
 * The diagram below highlights the difference between new and old training data.
 
-![](../images/gsoc-coding-period-week-2/compare_training_data.png)
+<img src="../images/gsoc-coding-period-week-2/compare_training_data.png" alt="" width="700" height="">
 
 ### 2. New Augmentation techniques:
 * Added in a couple more [Albumentations](https://github.com/albumentations-team/albumentations) based image augmentation techniques.
@@ -29,16 +29,17 @@ The goal for this week was to upgrade the DevoLearn cell membrane segmentation m
 ### 4. Training metrics:
 * The image below showcases metrics after 50 epochs of training.
 
-![](../images/gsoc-coding-period-week-2/training_metrics.png)
+<img src="../images/gsoc-coding-period-week-2/training_metrics.png" alt="" width="700" height="">
 
 ### 5. Old vs New Model:
 * The code to generate the following plots could be found in the [training notebook](https://github.com/Mainakdeb/GSoC-2021/blob/main/cell-membrane-segmentation/train_segmentation_model.ipynb). 
 
-![](../images/gsoc-coding-period-week-2/comparision_oldvsnew.gif)
+<img src="../images/gsoc-coding-period-week-2/comparision_oldvsnew.gif" alt="" width="700" height="">
 
-![](../images/gsoc-coding-period-week-2/comparision_1.png)
+<img src="../images/gsoc-coding-period-week-2/comparision_1.png" alt="" width="700" height="">
 
-![](../images/gsoc-coding-period-week-2/comparision_2.png)
+<img src="../images/gsoc-coding-period-week-2/comparision_2.png" alt="" width="700" height="">
+
 
 ## Planned:
 * Push the upgraded cell membrane segmentation model into the main DevoLearn repository.

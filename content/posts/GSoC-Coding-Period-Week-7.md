@@ -11,9 +11,11 @@ date = "2021-07-25"
     * Built the pipeline to run inference using the ONNX models, ran tests to ensure the 2 segmentation models work via the GUI.
     * The user will have the ability to select any of the DevoLearn models from the drop down menu to the left, then drag and drop inputs. I've also added in some examples, just in case.
 
-![](../images/gsoc-coding-period-week-7/devolearn_web_demo_1.gif)
+<img src="../images/gsoc-coding-period-week-7/devolearn_web_demo_1.gif" alt="" width="700" height="">
 
-![](../images/gsoc-coding-period-week-7/devolearn_web_demo_2.gif)
+
+<img src="../images/gsoc-coding-period-week-7/devolearn_web_demo_2.gif" alt="" width="700" height="">
+
 
 * The GIFs above showcase the current progress. I could get 2 of the segmentation models to work with the GUI. 
 * As of now, the home page contains animations that highlight what the software can do. I have plans to add more content soon.

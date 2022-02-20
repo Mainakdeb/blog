@@ -17,8 +17,7 @@ Most of my time this week was spent on building the training pipeline for the pr
 
 * Used Albumentations to define the image augmentation pipeline. Also defined a new class to add gaussian noise in training images (inputs only). The image below shows feature-label pairs from the training data, notice that one of the input images contains a lot more noise.
 
-    ![](../images/gsoc-coding-period-week-4/training_data.png)
-
+    <img src="../images/gsoc-coding-period-week-4/training_data.png" alt="" width="500" height="">
 
 * Ran some tests to ensure that the dataloader works properly, plotted some feature-label pairs for visual inspection.
 
@@ -28,10 +27,10 @@ Most of my time this week was spent on building the training pipeline for the pr
 
 * Defined a rough training loop and trained the model for a couple epochs as a test. The image below showcases the metrics for the 2 epoch test-run. The IOU score is close to 79 after the 2nd epoch, which is not bad. 
 
+    <img src="../images/gsoc-coding-period-week-4/train_metrics_2_epochs.png" alt="" width="1000" height="">
 
-    ![](../images/gsoc-coding-period-week-4/train_metrics_2_epochs.png)
+    <img src="../images/gsoc-coding-period-week-4/inference_2_epochs.png" alt="" width="700" height="">
 
-    ![](../images/gsoc-coding-period-week-4/inference_2_epochs.png)
 
 * Feel free to check out this work:
     * Github - [Link](https://github.com/Mainakdeb/GSoC-2021/blob/1cbe0e8429671491168f3cceaa602d5953e85df3/cell-nucleus-segmentation/train_segmentation_model.ipynb)

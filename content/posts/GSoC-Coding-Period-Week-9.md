@@ -14,7 +14,9 @@ date = "2021-08-09"
 
 * The gif below showcases the new interactive plots.
 
-![](../images/gsoc-coding-period-week-9/zoom_fullscreen_demo.gif)
+
+
+<img src="../images/gsoc-coding-period-week-9/zoom_fullscreen_demo.gif" alt="" width="1000" height="">
 
 
 * Added a threshold slider for the 2 segmentation models. This threshold is applied on the output from the model. 
@@ -23,15 +25,12 @@ date = "2021-08-09"
 
 * The images below illustrate the differences in output with diffferent threshold values.
 
-![](../images/gsoc-coding-period-week-9/membrane_seg_threshold.png)
+<img src="../images/gsoc-coding-period-week-9/membrane_seg_threshold.png" alt="" width="1000" height="">
 
-![](../images/gsoc-coding-period-week-9/nuc_seg_threshold.png)
+<img src="../images/gsoc-coding-period-week-9/nuc_seg_threshold.png" alt="" width="1000" height="">
+
+
 
 * Created first official deployment of devolearn web-app from the official repository, feel free to give it a try - [https://devolearn.herokuapp.com/](https://devolearn.herokuapp.com/)
 
 * The underlying code for the website could be found in the [DevoLearn web-app repository](https://github.com/DevoLearn/devolearn-web)
-
-## Planned:
-* Move from Travis CI to Github Actions.
-* Release a new DevoLearn version.
-* Update the DevoLearn starter notebook.

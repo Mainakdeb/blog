@@ -18,7 +18,7 @@ date = "2021-08-02"
 
 * Link to Code - [Github repository](https://github.com/Mainakdeb/devolearn-web-test)
 
-![](../images/gsoc-coding-period-week-8/devolearn_web_collage.png)
+<img src="../images/gsoc-coding-period-week-8/devolearn_web_collage.png" alt="" width="1000" height="">
 
 ## Why did I not use Gradio for building the GUI?
 * I could not find a way to host 3 different models in one web-app using Gradio. 
