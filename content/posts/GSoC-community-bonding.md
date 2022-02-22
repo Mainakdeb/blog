@@ -19,7 +19,6 @@ This blog post summary of what I've been doing this week and what I plan to do i
 * I had zero experience with _.tif_ files, had to figure out how to convert them to numpy arrays, then used matplotlib to plot them as images.
 
 <img src="../images/gsoc-community-bonding-1/inferno_sbs_celltrackingchallenge.png" alt="" width="700" height="">
-<img src="" alt="" width="700" height="">
 
 
 * The dataset is by no means ideal, it is scattered across multiple folders and contains many useless datapoints near the extreme ends of the dorsal-ventral axis.

@@ -63,3 +63,8 @@ googleAnalytics = ""
     url = "/archives/"
     weight = 3
 
+[[menu.main]]
+    name = "CV"
+    identifier = "CV"
+    url = "https://mainakdeb.github.io/CV/CV.pdf"
+    weight = 4

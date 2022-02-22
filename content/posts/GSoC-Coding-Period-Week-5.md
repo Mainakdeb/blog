@@ -16,8 +16,6 @@ date = "2021-07-12"
 
 
 <img src="../images/gsoc-coding-period-week-5/best_params.png" alt="" width="1000" height="">
-<img src="" alt="" width="1000" height="">
-
 
 * As a recap, the model details are :
     * Type - Feature Pyramid Network
