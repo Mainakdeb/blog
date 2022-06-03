@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Mainak&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Diving into Cellular Automata</title>
+      <link>https://mainakdeb.github.io/posts/cellular-automata/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/cellular-automata/</guid>
+      <description>I remember Vsauce(Michael Stevens) tweeting out a link to one of Alan Zucconi&amp;rsquo;s videos about John Conway&amp;rsquo;s game of Life.</description>
+    </item>
     
     <item>
       <title>GSoC - Coding Period Week 9</title>

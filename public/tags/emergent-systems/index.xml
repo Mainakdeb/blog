@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emergent Systems on Mainak&#39;s blog</title>
+    <link>https://mainakdeb.github.io/tags/emergent-systems/</link>
+    <description>Recent content in Emergent Systems on Mainak&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mainakdeb.github.io/tags/emergent-systems/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diving into Cellular Automata</title>
+      <link>https://mainakdeb.github.io/posts/cellular-automata/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/cellular-automata/</guid>
+      <description>I remember Vsauce(Michael Stevens) tweeting out a link to one of Alan Zucconi&amp;rsquo;s videos about John Conway&amp;rsquo;s game of Life.</description>
+    </item>
+    
+  </channel>
+</rss>

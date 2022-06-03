@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Diving into Cellular Automata</title>
+      <link>https://mainakdeb.github.io/posts/cellular-automata/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/cellular-automata/</guid>
+      <description>I remember Vsauce(Michael Stevens) tweeting out a link to one of Alan Zucconi&amp;rsquo;s videos about John Conway&amp;rsquo;s game of Life.</description>
+    </item>
+    
+    <item>
       <title>GSoC - Coding Period Week 9</title>
       <link>https://mainakdeb.github.io/posts/gsoc-coding-period-week-9/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
