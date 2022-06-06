@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>CLIP Guided Neural Cellular Automata using PyTorch</title>
+      <link>https://mainakdeb.github.io/posts/clip-guided-nca/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/posts/clip-guided-nca/</guid>
+      <description>The gif above was generated using outputs from a Neural Cellular Automata model steered by OpenAI&amp;rsquo;s CLIP (language model trained on image-text pairs) using the text prompt &amp;ldquo;The PyTorch Logo&amp;rdquo;.</description>
+    </item>
+    
+    <item>
       <title>Diving into Cellular Automata</title>
       <link>https://mainakdeb.github.io/posts/cellular-automata/</link>
       <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>

@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Mainak&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mainakdeb.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Cellular Automata</title>
       <link>https://mainakdeb.github.io/tags/cellular-automata/</link>
-      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/tags/cellular-automata/</guid>
       <description></description>
@@ -23,9 +23,18 @@
     <item>
       <title>Emergent Systems</title>
       <link>https://mainakdeb.github.io/tags/emergent-systems/</link>
-      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://mainakdeb.github.io/tags/emergent-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Networks</title>
+      <link>https://mainakdeb.github.io/tags/neural-networks/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mainakdeb.github.io/tags/neural-networks/</guid>
       <description></description>
     </item>
     
